@@ -1,0 +1,10 @@
+
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <app-task-form (addNewTodoItem)="addNewTodo($event)"></app-task-form>
+  <app-todo-list [todoListItems]="todoList"
+  (markAsDone)="markAsDone($event)"></app-todo-list>
+  <app-done-list [doneListItems]="doneList"
+  (markAsUndone)="markAsUndone($event)"></app-done-list>
+</div>
+<router-outlet></router-outlet>

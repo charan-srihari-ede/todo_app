@@ -1,0 +1,11 @@
+nav{
+    background-color: rgb(9, 170, 228);
+    height: 64px;
+    padding: 0 24px;
+}
+nav h1{
+    color: white;
+    line-height: 64px;
+    font-weight: bolder;
+    font-size: 24px;
+}

@@ -1,0 +1,11 @@
+<div class="done-list-container">
+    <p>Completed :</p>
+    <ul>
+        <li *ngFor="let item of doneListItems">
+            <input type="checkbox" 
+            [checked]="true"
+            (change)="onCheckboxChanged(item)"/>&nbsp;
+            <label>{{ item.title }}</label>
+            <small>&nbsp; - {{ item.completedAt|date}}</small></li>
+    </ul>
+</div>

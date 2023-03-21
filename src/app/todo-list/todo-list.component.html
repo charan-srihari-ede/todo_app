@@ -1,0 +1,13 @@
+<div class="todo-list-container">
+    <p>ToDo's :</p>
+    <ul>
+        <li *ngFor="let item of todoListItems">
+            <input type="checkbox"
+            [checked]="item.isCompleted"
+            (change)="onCheckboxChanged(item)" /> &nbsp;
+      <label>{{ item.title }}</label>&nbsp; 
+      <small>- {{ item.createdAt|date }}</small>
+    </li>
+        
+    </ul>    
+</div>
